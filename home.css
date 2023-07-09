@@ -1,0 +1,269 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body,
+html {
+  margin: 1rem auto;
+  font-size: 10px;
+  font-family: "Poppins", sans-serif;
+  width: 128rem;
+}
+
+.main {
+  background-color: #fff;
+  width: calc(100vw-100px);
+  height: 90vh;
+}
+
+.nav-bar {
+  height: 8rem;
+  /* background-color: aqua; */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  height: 60%;
+  justify-self: flex-start;
+}
+
+.navigation {
+  /* margin-left: 30%; */
+  align-self: center;
+  justify-self: center;
+}
+
+.clickable {
+  font-size: 1.5rem;
+  text-decoration: none;
+  font-weight: 600;
+  border-bottom: #000 5px;
+}
+
+.nav-links-border {
+  display: inline-block;
+  margin: 2.2rem;
+  width: fit-content;
+}
+
+.nav-links:hover {
+  border-bottom: solid 3px #5247be;
+}
+
+.nav-links:link,
+.nav-links:visited {
+  color: grey;
+}
+
+.btn-links {
+  border-radius: 2.7rem;
+  padding: 1.5rem 2.5rem;
+}
+
+.pink {
+  background-color: #ffd8db;
+}
+
+.click-to-action {
+  background-color: #5247be;
+  color: #fff;
+  font-weight: 400;
+  display: inline-block;
+  margin-right: 1rem;
+}
+.hero-div {
+  display: flex;
+  height: 80vh;
+  width: 100%;
+  padding: 2rem 6rem;
+}
+
+.hero-div-left {
+  width: 50%;
+  padding-right: 1rem;
+}
+
+.hero-div-right {
+  width: 50%;
+  /* background-color: green; */
+}
+
+.main-title {
+  font-size: 7rem;
+  line-height: 8rem;
+  font-weight: 700;
+}
+
+.accent-color {
+  color: #0000ee;
+}
+
+.sub-title {
+  margin-top: 2.5rem;
+  font-size: 1.7rem;
+  display: inline-block;
+}
+.material-symbols-outlined {
+  font-variation-settings: "FILL" 0, "wght" 900, "GRAD" 0, "opsz" 48;
+}
+
+.hero-buttons {
+  margin-top: 3rem;
+  display: flex;
+  align-items: center;
+}
+.up-down-arrow {
+  display: inline-block;
+  padding: 1.3rem 1.3rem;
+  background-color: #fff;
+  border-radius: 2.4rem;
+  margin: 0 0.2rem;
+  font-size: 1.2rem;
+}
+
+.not-highlighted {
+  border: none;
+  color: #dadada;
+}
+
+.highlighted {
+  border: rgb(224, 224, 224) solid 0.1rem;
+}
+
+.hero-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: 5rem;
+}
+#hero-img {
+  animation-name: imageUpDown;
+  animation-duration: 2s;
+  animation-timing-function: ease;
+  animation-iteration-count: infinite;
+  width: 70%;
+}
+
+.img-shadow {
+  height: 40px;
+  width: 300px;
+  border-radius: 60%;
+  background-color: #e7e7e7;
+  align-self: center;
+  filter: blur(3px);
+  animation-name: shadowShrink;
+  animation-duration: 2s;
+  animation-timing-function: ease;
+  animation-iteration-count: infinite;
+}
+
+@keyframes imageUpDown {
+  0% {
+    transform: translateY(-100px);
+  }
+  50% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-100px);
+  }
+}
+
+@keyframes shadowShrink {
+  0% {
+    transform: scale(25%);
+  }
+  50% {
+    transform: scale(70%);
+  }
+  100% {
+    transform: scale(25%);
+  }
+}
+
+.options-buttons {
+  margin-top: 5rem;
+}
+
+.options-card {
+  margin: 1rem 0;
+  width: 80%;
+  height: 6rem;
+  border-radius: 2rem;
+  display: flex;
+  align-items: center;
+  padding: 1rem;
+}
+
+.option-name {
+  font-size: 1.5rem;
+  font-weight: 600;
+  width: 15rem;
+  margin-left: 2rem;
+}
+
+.selected {
+  background-color: #fff;
+  box-shadow: 0.3rem 0.3rem 1rem #e2e1e1;
+}
+
+.not-selected {
+  background-color: #f5f5f5;
+}
+
+.material-symbols-rounded {
+  font-variation-settings: "FILL" #dadada, "wght" 400, "GRAD" 0, "opsz" 48;
+}
+
+.date {
+  color: grey;
+  font-weight: 300;
+  font-size: 1.5rem;
+  text-align: center;
+  padding: 0 4rem;
+}
+
+.pill {
+  height: 1.5rem;
+  width: 3rem;
+  background-color: black;
+  border-radius: 2.5rem;
+}
+
+.green {
+  background-color: #a4d199;
+}
+
+.pink {
+  background-color: #fcd8db;
+}
+
+.red {
+  background-color: #f56430;
+}
+
+.orange {
+  background-color: #fce19f;
+}
+
+.img-checked {
+  content: url("img/tick-blue.png");
+}
+
+.img-unchecked {
+  content: url("img/tick-gray.png");
+}
